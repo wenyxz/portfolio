@@ -23,6 +23,12 @@ button {
     cursor: pointer;
 }
 
+span {
+    background: linear-gradient(to bottom right, #CF1B81 0%, #1D02CF 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .section {
     width: 100%;
     min-height: 100vh;
