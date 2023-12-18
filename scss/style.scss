@@ -520,7 +520,6 @@ button {
         }
     }
     
-
     .container {
         flex-direction: column;
         justify-content: center;
@@ -535,10 +534,65 @@ button {
             flex-wrap: wrap-reverse;
 
             &:nth-child(2) {
+                padding: 0;
+                border: transparent;
                 flex-wrap: wrap;
             }
         }
     }
+
+    .welcome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .profile-picture {
+            width: 180px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 900;
+            color: #f0f0f0;
+            background: linear-gradient(to bottom right, #CF1B81 0%, #1D02CF 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #969696;
+            margin-bottom: 10px;
+        }
+
+        .socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    transition: .2s ease;
+                    transform: scale(1.15);
+                }
+            }
+
+            i {
+                font-size: 24px;
+                color: #969696;
+            }
+        }
+    }
+
     
     .text {
         color: white;
