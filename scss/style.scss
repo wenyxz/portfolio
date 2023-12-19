@@ -601,6 +601,7 @@ span {
 
     
     .text {
+        width: 100%;
         color: white;
         z-index: 2;
         margin-bottom: 50px;
@@ -608,16 +609,19 @@ span {
         h1 {
             font-size: 48px;
             font-weight: 900;
-            p {
-                background: linear-gradient(to bottom right, #CF1B81 0%, #1D02CF 100%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
         }
     
         h2 {
-            font-size: 24px;
-            font-weight: 700;
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 10px;
+
+            &:nth-child(3) {
+                font-size: 18px;
+                font-weight: 400;
+                margin: 0;
+            }
+
             p {
                 background: linear-gradient(to bottom right, #CF1B81 0%, #1D02CF 100%);
                 background-clip: text;
