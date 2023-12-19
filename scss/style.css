@@ -293,6 +293,47 @@ span {
   .navbar .theme button i {
     font-size: 36px;
   }
+  .welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .welcome .profile-picture {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .welcome h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #f0f0f0;
+  }
+  .welcome h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #969696;
+    margin-bottom: 10px;
+  }
+  .welcome .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .welcome .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .welcome .socials a:hover {
+    transition: 0.2s ease;
+    transform: scale(1.15);
+  }
+  .welcome .socials i {
+    font-size: 28px;
+    color: #969696;
+  }
   .container {
     flex-direction: row;
     justify-content: center;
@@ -313,22 +354,18 @@ span {
     z-index: 2;
   }
   .text h1 {
-    font-size: 48px;
+    font-size: 96px;
     font-weight: 900;
   }
-  .text h1 p {
-    background: linear-gradient(to bottom right, #CF1B81 0%, #1D02CF 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   .text h2 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 10px;
   }
-  .text h2 p {
-    background: linear-gradient(to bottom right, #CF1B81 0%, #1D02CF 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .text h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
   }
   .images {
     position: relative;
@@ -536,15 +573,10 @@ span {
     font-weight: 900;
     margin-bottom: 10px;
   }
-  .text h2:nth-child(3) {
+  .text h3 {
     font-size: 18px;
     font-weight: 400;
     margin: 0;
-  }
-  .text h2 p {
-    background: linear-gradient(to bottom right, #CF1B81 0%, #1D02CF 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   .images {
     position: relative;

@@ -333,6 +333,55 @@ span {
         }
     }
     
+    .welcome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .profile-picture {
+            width: 180px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 900;
+            color: #f0f0f0;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #969696;
+            margin-bottom: 10px;
+        }
+
+        .socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    transition: .2s ease;
+                    transform: scale(1.15);
+                }
+            }
+
+            i {
+                font-size: 28px;
+                color: #969696;
+            }
+        }
+    }
+
     .container {
         flex-direction: row;
         justify-content: center;
@@ -356,23 +405,20 @@ span {
         z-index: 2;
     
         h1 {
-            font-size: 48px;
+            font-size: 96px;
             font-weight: 900;
-            p {
-                background: linear-gradient(to bottom right, #CF1B81 0%, #1D02CF 100%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
         }
     
         h2 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        h3 {
             font-size: 24px;
-            font-weight: 700;
-            p {
-                background: linear-gradient(to bottom right, #CF1B81 0%, #1D02CF 100%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
+            font-weight: 400;
+            margin: 0;
         }
     }
     
@@ -612,18 +658,12 @@ span {
             font-size: 36px;
             font-weight: 900;
             margin-bottom: 10px;
+        }
 
-            &:nth-child(3) {
-                font-size: 18px;
-                font-weight: 400;
-                margin: 0;
-            }
-
-            p {
-                background: linear-gradient(to bottom right, #CF1B81 0%, #1D02CF 100%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
+        h3 {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0;
         }
     }
     
